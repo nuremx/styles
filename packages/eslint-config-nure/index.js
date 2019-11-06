@@ -20,6 +20,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/display-name': 'off',
     'no-unused-vars': 'error',
+    'no-return-await': 'error',
+    'import/order': ['warn', { 'newlines-between': 'always' }],
   },
   settings: {
     'import/resolver': 'reactnative',
