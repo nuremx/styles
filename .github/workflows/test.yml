@@ -1,0 +1,30 @@
+name: test
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  eslint-config-nure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+        working-directory: ./packages/eslint-config-nure
+      - run: npm test
+        working-directory: ./packages/eslint-config-nure
+  prettier-config-nure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+        working-directory: ./packages/prettier-config-nure
+      - run: npm test
+        working-directory: ./packages/prettier-config-nure

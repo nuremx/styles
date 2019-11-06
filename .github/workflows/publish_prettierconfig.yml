@@ -1,0 +1,23 @@
+name: publish prettier-config-nure
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "packages/prettier-config-nure/*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: publish to npm
+        run: npm publish
+        working-directory: ./packages/prettier-config-nure
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}

@@ -1,0 +1,10 @@
+{
+  "name": "styles",
+  "version": "0.0.1",
+  "description": "Nure code format styles",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nuremx",
+  "license": "ISC"
+}
