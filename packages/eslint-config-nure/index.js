@@ -23,6 +23,7 @@ module.exports = {
     'no-extend-native': 'error',
     'no-return-await': 'error',
     'no-sync': 'error',
+    'no-throw-literal': 'error',
     'no-use-before-define': 'error',
     'no-useless-return': 'error',
     'no-unused-vars': 'error',
