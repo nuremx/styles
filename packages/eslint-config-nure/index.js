@@ -19,6 +19,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/display-name': 'off',
+    'no-unused-vars': 'error',
   },
   settings: {
     'import/resolver': 'reactnative',
