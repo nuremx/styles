@@ -16,7 +16,10 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'import/order': ['warn', { 'newlines-between': 'always' }],
+    'import/order': [
+      'warn',
+      { 'newlines-between': 'always-and-inside-groups' },
+    ],
     'max-lines': ['error', { max: 300, skipBlankLines: true }],
     'max-params': ['warn', 3],
     'no-alert': 'error',
