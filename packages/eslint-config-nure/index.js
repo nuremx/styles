@@ -20,6 +20,7 @@ module.exports = {
       'warn',
       { 'newlines-between': 'always-and-inside-groups' },
     ],
+    'import/exports-last': 'warn',
     'max-lines': ['error', { max: 300, skipBlankLines: true }],
     'max-params': ['warn', 3],
     'no-alert': 'error',
