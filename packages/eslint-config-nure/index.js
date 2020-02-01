@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    jest: true,
   },
   plugins: ['react', 'eslint-plugin-jsx-a11y', 'react-hooks'],
   extends: [
@@ -40,6 +41,6 @@ module.exports = {
     'require-await': 'error',
   },
   settings: {
-    'import/resolver': 'reactnative',
+    'import/resolver': ['reactnative', { node: { paths: ['src'] } }],
   },
-};
+}
