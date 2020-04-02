@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-nure",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=8.10"
   },
@@ -8,5 +8,11 @@
   "files": [
     "index.json"
   ],
-  "prettier": "./index.json"
+  "prettier": "./index.json",
+  "dependencies": {
+    "prettier": "2.x"
+  },
+  "peerDependencies": {
+    "prettier": "2.x"
+  }
 }
