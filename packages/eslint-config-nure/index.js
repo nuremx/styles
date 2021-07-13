@@ -23,7 +23,7 @@ module.exports = {
     ],
     'import/exports-last': 'warn',
 
-    'react/jsx-curly-brace-presence': { props: 'warn', children: 'warn' },
+    'react/jsx-curly-brace-presence': { props: 'never', children: 'never' },
 
     'max-lines': ['error', { max: 300, skipBlankLines: true }],
     'max-params': ['warn', 3],
