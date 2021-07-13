@@ -22,6 +22,9 @@ module.exports = {
       { 'newlines-between': 'always-and-inside-groups' },
     ],
     'import/exports-last': 'warn',
+
+    'react/jsx-curly-brace-presence': { props: 'warn', children: 'warn' },
+
     'max-lines': ['error', { max: 300, skipBlankLines: true }],
     'max-params': ['warn', 3],
     'no-alert': 'error',
